@@ -1,0 +1,88 @@
+{
+  "public/Fonts/Excon-Regular.woff": {
+    "file": "assets/Excon-Regular-D1ECvk6P.woff",
+    "src": "public/Fonts/Excon-Regular.woff"
+  },
+  "public/Fonts/NationalPark-VariableFont_wght.woff": {
+    "file": "assets/NationalPark-VariableFont_wght-DyDl75Ob.woff",
+    "src": "public/Fonts/NationalPark-VariableFont_wght.woff"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-_Jemgc_p.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/Pages/assets/images/techsIcons/bootstrap.png": {
+    "file": "assets/bootstrap-B38gGjGd.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/bootstrap.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/css.png": {
+    "file": "assets/css-udzsRx7R.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/css.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/framer.png": {
+    "file": "assets/framer-Cn0m4P5K.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/framer.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/github.png": {
+    "file": "assets/github-DDQvmi3k.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/github.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/jira.png": {
+    "file": "assets/jira-CXe_hHUb.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/jira.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/laravel.png": {
+    "file": "assets/laravel-Ut6R4ILt.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/laravel.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/mysql.png": {
+    "file": "assets/mysql-B1IC4QCt.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/mysql.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/php.png": {
+    "file": "assets/php-CLta4eW4.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/php.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/postman.png": {
+    "file": "assets/postman-BvXvJRwv.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/postman.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/reactjs.png": {
+    "file": "assets/reactjs-C5XGwn1s.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/reactjs.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/sass.png": {
+    "file": "assets/sass-Cht0YTbI.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/sass.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/sql.png": {
+    "file": "assets/sql-CE1aSxlL.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/sql.png"
+  },
+  "resources/js/Pages/assets/images/techsIcons/tailwind.png": {
+    "file": "assets/tailwind-BcMJp9bN.png",
+    "src": "resources/js/Pages/assets/images/techsIcons/tailwind.png"
+  },
+  "resources/js/app.jsx": {
+    "file": "assets/app-COg26Cev.js",
+    "name": "app",
+    "src": "resources/js/app.jsx",
+    "isEntry": true,
+    "assets": [
+      "assets/framer-Cn0m4P5K.png",
+      "assets/css-udzsRx7R.png",
+      "assets/github-DDQvmi3k.png",
+      "assets/laravel-Ut6R4ILt.png",
+      "assets/mysql-B1IC4QCt.png",
+      "assets/reactjs-C5XGwn1s.png",
+      "assets/tailwind-BcMJp9bN.png",
+      "assets/postman-BvXvJRwv.png",
+      "assets/php-CLta4eW4.png",
+      "assets/sass-Cht0YTbI.png",
+      "assets/sql-CE1aSxlL.png",
+      "assets/jira-CXe_hHUb.png",
+      "assets/bootstrap-B38gGjGd.png"
+    ]
+  }
+}
