@@ -17,6 +17,43 @@
     src: url('../../public/Fonts/NationalPark-VariableFont_wght.woff');
 }
 
+
+
+body {
+    background-color: #0B0B0E;
+}
+
+.blob-home-top {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background: conic-gradient(rgba(14, 10, 58, 0.92), rgb(0, 179, 255));
+    filter: blur(60px);
+    z-index: 1;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.blob-home-bottom {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    background: conic-gradient(#fff, #000);
+    filter: blur(60px);
+    z-index: 1;
+    opacity: .2;
+    right: 0;
+    bottom: 0;
+}
+
+.home-left-content{
+    font-family: 'nationalPark';
+}
+
 /* Importation des composants Tailwind */
 @tailwind base;
 @tailwind components;
