@@ -14,7 +14,7 @@
         content="Ait-bella , full-stack, Laravel, Abdessmad, Reactjs">
     <title>Ait-bella Abdessamad</title>
     @viteReactRefresh
-    @vite(['resources/js/app.jsx', 'resources/css/style.css', 'resources/css/app.css'])
+    @vite(['resources/js/app.jsx', 'resources/css/app.css'])
     @inertiaHead
 </head>
 <body>

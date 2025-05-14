@@ -16,7 +16,6 @@ class ProjectController extends Controller
     {
         $projects = Project::all();
 
-        // dd($projects);
         return Inertia::render('Home', [
             'projects' => $projects,
         ]);

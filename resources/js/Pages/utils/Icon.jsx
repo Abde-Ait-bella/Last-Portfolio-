@@ -2,19 +2,19 @@
 import React, { useState } from "react"; 
 import { motion } from 'framer-motion'
 // Import various tech icons from local image files
-import Framer_Motion from "../assets/images/techsIcons/framer.png";
-import CSS from "../assets/images/techsIcons/css.png";
-import GitHub from "../assets/images/techsIcons/github.png";
-import Laravel from "../assets/images/techsIcons/laravel.png";
-import MySQL from "../assets/images/techsIcons/mysql.png";
-import ReactJs from "../assets/images/techsIcons/reactjs.png";
-import TailwindCss from "../assets/images/techsIcons/tailwind.png";
-import Postman from "../assets/images/techsIcons/postman.png";
-import PHP from "../assets/images/techsIcons/php.png";
-import SASS from "../assets/images/techsIcons/sass.png";
-import PostgreSql from "../assets/images/techsIcons/sql.png";
-import Jira from "../assets/images/techsIcons/jira.png";
-import Bootstrap from "../assets/images/techsIcons/bootstrap.png";
+import Framer_Motion from "../assets/techsIcons/framer.png";
+import CSS from "../assets/techsIcons/css.png";
+import GitHub from "../assets/techsIcons/github.png";
+import Laravel from "../assets/techsIcons/laravel.png";
+import MySQL from "../assets/techsIcons/mysql.png";
+import ReactJs from "../assets/techsIcons/reactjs.png";
+import TailwindCss from "../assets/techsIcons/tailwind.png";
+import Postman from "../assets/techsIcons/postman.png";
+import PHP from "../assets/techsIcons/php.png";
+import SASS from "../assets/techsIcons/sass.png";
+import PostgreSql from "../assets/techsIcons/sql.png";
+import Jira from "../assets/techsIcons/jira.png";
+import Bootstrap from "../assets/techsIcons/bootstrap.png";
 
 // Import the "Reveal" effect component
 import Reveal from "./Reveal";
