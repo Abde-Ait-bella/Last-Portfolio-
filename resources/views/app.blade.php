@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="utf-8" />
-  <link rel="icon" href="./images/profile.png" />
+  <link rel="icon" href="https://intranet.youcode.ma/storage/users/profile/thumbnail/1104-1727859750.JPG" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta property="og:url" content="https://aitbella.digital.ma" />
