@@ -31,18 +31,18 @@ function MyStack() {
       return {
         containerClass: "w-[300px] h-[400px]",
         icons: [
-          { type: "MySQL", top: "top-[70%]", left: "left-[15%]", delay: 0.1 },
-          { type: "PHP", top: "top-[20%]", left: "left-[12%]", delay: 0.5 },
-          { type: "SASS", top: "top-[40%]", left: "left-[25%]", delay: 0.8 },
-          { type: "GitHub", top: "top-[50%]", left: "left-[45%]", delay: 1.0 },
-          { type: "ReactJs", top: "top-[15%]", left: "left-[38%]", delay: 1.2 },
-          { type: "Postman", top: "top-[65%]", left: "left-[65%]", delay: 1.4 },
-          { type: "TailwindCss", top: "top-[35%]", left: "left-[65%]", delay: 1.6 },
-          { type: "Laravel", top: "top-[10%]", left: "left-[65%]", delay: 1.8 },
-          { type: "PostgreSql", top: "top-[80%]", left: "left-[35%]", delay: 2.0 },
-          { type: "Bootstrap", top: "top-[70%]", left: "left-[80%]", delay: 2.2 },
-          { type: "Framer_Motion", top: "top-[25%]", left: "left-[85%]", delay: 2.4 },
-          { type: "Jira", top: "top-[45%]", left: "left-[85%]", delay: 2.6 }
+          { type: "MySQL", top: "top-[60%]", left: "left-[10%]", delay: 0.1 },
+          { type: "PHP", top: "top-[20%]", left: "left-[10%]", delay: 0.5 },
+          { type: "SASS", top: "top-[40%]", left: "left-[20%]", delay: 0.8 },
+          { type: "GitHub", top: "top-[50%]", left: "left-[40%]", delay: 1.0 },
+          { type: "ReactJs", top: "top-[15%]", left: "left-[33%]", delay: 1.2 },
+          { type: "Postman", top: "top-[65%]", left: "left-[49%]", delay: 1.4 },
+          { type: "TailwindCss", top: "top-[35%]", left: "left-[53%]", delay: 1.6 },
+          { type: "Laravel", top: "top-[10%]", left: "left-[55%]", delay: 1.8 },
+          { type: "PostgreSql", top: "top-[74%]", left: "left-[30%]", delay: 2.0 },
+          { type: "Bootstrap", top: "top-[70%]", left: "left-[75%]", delay: 2.2 },
+          { type: "Framer_Motion", top: "top-[25%]", left: "left-[80%]", delay: 2.4 },
+          { type: "Jira", top: "top-[45%]", left: "left-[80%]", delay: 2.6 }
         ]
       };
     }

@@ -131,7 +131,7 @@ export default function Home()  {
 
             <Toaster />
             <div style={container} className='homeContainer relative overflow-hidden min-h-screen'>
-                <div className={`home-left ${windowWidth > 1024 ? "w-[36%] px-7 py-2" : "w-full h-screen p-6"} grid gap-3`}>
+                <div className={`home-left ${windowWidth > 1024 ? "w-[36%] px-7 py-6" : "w-full p-6"} grid gap-3`}>
                     <motion.div
                         className="home-left-img h-[10rem] w-[10rem] border-2 border-slate-500 rounded-full overflow-hidden"
                         initial={{ opacity: 0, scale: 0 }}
@@ -146,7 +146,7 @@ export default function Home()  {
                         <img src="/images/profile.png" alt="" className='h-full w-full rounded' />
                     </motion.div>
                     <div
-                        className={`home-left-content ${windowWidth <= 1024 ? "mt-6" : "mt-3"} text-[rgb(203, 213, 225)] text-2xl text-white`}
+                        className={`home-left-content ${windowWidth <= 1024 ? "mt-6" : ""} text-[rgb(203, 213, 225)] text-2xl text-white`}
                         onMouseEnter={handleHover}
                         onMouseLeave={handleLeave}
                     >
@@ -155,7 +155,7 @@ export default function Home()  {
                     </div>
                     <div>
                         <motion.div
-                            className={` ${windowWidth <= 1024 ? "mt-6" : "mt-3"} description text-slate-300 text-lg leading-relaxed max-h-[90px] overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent
+                            className={` ${windowWidth <= 1024 ? "mt-6" : ""} description text-slate-300 text-lg leading-relaxed max-h-[90px] overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent
                 [&::-webkit-scrollbar]:w-2
                 [&::-webkit-scrollbar-track]:bg-transparent 
                 [&::-webkit-scrollbar-thumb]:bg-gray-400/70 
@@ -182,7 +182,7 @@ export default function Home()  {
                     </div>
                     
                     <div className='contact'>
-                        <div className="flex flex-col items-center gap-6 mt-3">
+                        <div className="flex flex-col items-center gap-6 mt-2">
                             <div className="flex gap-6">
                                 <a href="https://github.com/Abde-Ait-bella" target="_blank" rel="noopener noreferrer"
                                     onMouseEnter={handleHover}

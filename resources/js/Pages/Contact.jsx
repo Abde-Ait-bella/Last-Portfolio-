@@ -44,7 +44,7 @@ function Contact() {
         <div className="contacts h-full flex justify-center items-center w-full flex-col md:flex-row gap-4 md:gap-6 p-4 md:px-5">
             {/* En-tête pour mobile uniquement */}
             <motion.h2 
-                className="text-xl font-bold text-white mb-4 md:hidden"
+                className="text-xl font-bold text-slate-500 mb-4 md:hidden"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.2 }}
@@ -54,7 +54,7 @@ function Contact() {
             
             {/* Form Section */}
             <motion.div 
-                className="form w-full max-w-lg my-2 sm:my-3 md:my-3"
+                className="form w-full md:w-9/10 my-2 sm:my-3 md:my-3"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -121,7 +121,8 @@ function Contact() {
                             <textarea
                                 id="message"
                                 name="message"
-                                rows={windowWidth < 640 ? "3" : "3"}
+                                // rows={windowWidth < 640 ? "2" : "2"}
+                                rows={1}
                                 placeholder=" "
                                 onChange={(e) => setData('message', e.target.value)}
                                 required
