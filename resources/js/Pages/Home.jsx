@@ -214,7 +214,7 @@ export default function Home()  {
                                     aria-label="Copy email to clipboard"
                                 >
                                     {showEmailTooltip && (
-                                        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-2 py-1 rounded text-sm whitespace-nowrap">
+                                        <div className="absolute bottom-8 right-[-2.2rem] transform translate-x-[2%] bg-slate-800 text-white px-2 py-1 rounded text-sm whitespace-nowrap">
                                             Copier l'email
                                         </div>
                                     )}
