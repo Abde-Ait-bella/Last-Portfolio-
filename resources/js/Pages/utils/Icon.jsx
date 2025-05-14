@@ -2,19 +2,19 @@
 import React, { useState } from "react"; 
 import { motion } from 'framer-motion'
 // Import various tech icons from local image files
-import Framer_Motion from "../assets/techsIcons/framer.png";
-import CSS from "../assets/techsIcons/css.png";
-import GitHub from "../assets/techsIcons/github.png";
-import Laravel from "../assets/techsIcons/laravel.png";
-import MySQL from "../assets/techsIcons/mysql.png";
-import ReactJs from "../assets/techsIcons/reactjs.png";
-import TailwindCss from "../assets/techsIcons/tailwind.png";
-import Postman from "../assets/techsIcons/postman.png";
-import PHP from "../assets/techsIcons/php.png";
-import SASS from "../assets/techsIcons/sass.png";
-import PostgreSql from "../assets/techsIcons/sql.png";
-import Jira from "../assets/techsIcons/jira.png";
-import Bootstrap from "../assets/techsIcons/bootstrap.png";
+import Framer_Motion from "../assets/images/techsIcons/framer.png";
+import CSS from "../assets/images/techsIcons/css.png";
+import GitHub from "../assets/images/techsIcons/github.png";
+import Laravel from "../assets/images/techsIcons/laravel.png";
+import MySQL from "../assets/images/techsIcons/mysql.png";
+import ReactJs from "../assets/images/techsIcons/reactjs.png";
+import TailwindCss from "../assets/images/techsIcons/tailwind.png";
+import Postman from "../assets/images/techsIcons/postman.png";
+import PHP from "../assets/images/techsIcons/php.png";
+import SASS from "../assets/images/techsIcons/sass.png";
+import PostgreSql from "../assets/images/techsIcons/sql.png";
+import Jira from "../assets/images/techsIcons/jira.png";
+import Bootstrap from "../assets/images/techsIcons/bootstrap.png";
 
 // Import the "Reveal" effect component
 import Reveal from "./Reveal";
@@ -37,23 +37,23 @@ const imageMap = {
 };
 
 
-function Icon(props) {
+function Icon({ type, top, left, delay, scale = 1 }) {
 
   // Define a state variable "info" to track whether the icon is being hovered
   const [info, setInfo] = useState(false);
 
   // Determine the selected image based on the "type" prop or default to "Framer_Motion"
-  const selectedImage = imageMap[props.type] || Framer_Motion; 
+  const selectedImage = imageMap[type] || Framer_Motion; 
 
   return (
     <motion.div
-      className={`z-20 w-[10%] aspect-square  hover:cursor-grab absolute ${props.top} ${props.left}`}
+      className={`z-20 w-[10%] aspect-square  hover:cursor-grab absolute ${top} ${left}`}
       drag
       dragMomentum={false}
       dragSnapToOrigin={true}
       dragTransition={{ bounceStiffness: 300, bounceDamping: 10 }}
       initial={{ scale: 0 }}
-      whileInView={{ scale: 1, transition: { delay: info ? 0 : props.delay } }}
+      whileInView={{ scale: 1, transition: { delay: info ? 0 : delay } }}
       whileHover={{ scale: 1.3, transition: { delay: 0 } }}
       viewport={{ once: true }}
       onHoverStart={(event, info) => {
@@ -70,9 +70,10 @@ function Icon(props) {
           repeatDelay: 0,
           ease: "easeInOut",
           duration: "0.8",
-          delay: props.delay,
+          delay: delay,
         },
       }}
+      style={{ transform: `scale(${scale})` }}
     >
       <div className="flex flex-col justify-center items-center">
         {/* Display the selected image */}
@@ -88,7 +89,7 @@ function Icon(props) {
           <Reveal delay={0} bgColor="bg-slate-200">
             <p className="font-primary text-center text-sm text-slate-600 w-full whitespace-nowrap ">
               {/* Display tech name (conver Framer_Motion to Framer Motion ) */}
-              {props.type !== "Framer_Motion" ? props.type : "Framer Motion"}
+              {type !== "Framer_Motion" ? type : "Framer Motion"}
             </p>
           </Reveal>
         ) : null}

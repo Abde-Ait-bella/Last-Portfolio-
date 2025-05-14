@@ -66,6 +66,20 @@ export default function Home()  {
                 stiffness: 300,
                 damping: 28
             }
+        },
+        grabbing: {
+            x: mousePosition.x - 25,
+            y: mousePosition.y - 25,
+            height: 50,
+            width: 50,
+            borderRadius: "8px",
+            backgroundColor: "rgba(255, 255, 255, 0.2)",
+            border: "2px solid white",
+            transition: {
+                type: "spring",
+                stiffness: 300,
+                damping: 28
+            }
         }
     };
 
@@ -116,32 +130,8 @@ export default function Home()  {
         <AppProvider data={projects}>
 
             <Toaster />
-            <div style={container} className='homeContainer relative overflow-hidden'>
-                {/* Custom cursor with white background and colored border */}
-                {/* <motion.div
-                    className="cursor"
-                    variants={variants}
-                    animate={cursorVariant}
-                    style={{
-                        position: 'fixed',
-                        top: 0,
-                        left: 0,
-                        width: '32px',
-                        height: '32px',
-                        borderRadius: '50%',
-                        backgroundImage: 'url(/images/profile.png)',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        border: '2px solid white',
-                        pointerEvents: 'none',
-                        zIndex: 9999,
-                    }}
-                />
-
-                <p className='blob-home-top'></p>
-                <p className='blob-home-bottom'></p> */}
-
-                <div className={`home-left ${windowWidth > 1024 ? "w-[36%]" : "w-full"} h-screen p-7 grid gap-3`}>
+            <div style={container} className='homeContainer relative overflow-hidden min-h-screen'>
+                <div className={`home-left ${windowWidth > 1024 ? "w-[36%] px-7 py-2" : "w-full h-screen p-6"} grid gap-3`}>
                     <motion.div
                         className="home-left-img h-[10rem] w-[10rem] border-2 border-slate-500 rounded-full overflow-hidden"
                         initial={{ opacity: 0, scale: 0 }}
@@ -156,7 +146,7 @@ export default function Home()  {
                         <img src="/images/profile.png" alt="" className='h-full w-full rounded' />
                     </motion.div>
                     <div
-                        className="home-left-content text-[rgb(203, 213, 225)] text-2xl text-white"
+                        className={`home-left-content ${windowWidth <= 1024 ? "mt-6" : "mt-3"} text-[rgb(203, 213, 225)] text-2xl text-white`}
                         onMouseEnter={handleHover}
                         onMouseLeave={handleLeave}
                     >
@@ -165,11 +155,11 @@ export default function Home()  {
                     </div>
                     <div>
                         <motion.div
-                            className="description text-slate-300 text-lg leading-relaxed max-h-[90px] overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent
+                            className={` ${windowWidth <= 1024 ? "mt-6" : "mt-3"} description text-slate-300 text-lg leading-relaxed max-h-[90px] overflow-y-auto custom-scrollbar scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent
                 [&::-webkit-scrollbar]:w-2
                 [&::-webkit-scrollbar-track]:bg-transparent 
                 [&::-webkit-scrollbar-thumb]:bg-gray-400/70 
-                [&::-webkit-scrollbar-thumb]:rounded-full"
+                [&::-webkit-scrollbar-thumb]:rounded-full`}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
@@ -224,7 +214,7 @@ export default function Home()  {
                                     aria-label="Copy email to clipboard"
                                 >
                                     {showEmailTooltip && (
-                                        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-2 py-1 rounded text-sm whitespace-nowrap">
+                                        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 bg-slate-800 text-white px-2 py-1 rounded text-sm whitespace-nowrap">
                                             Copier l'email
                                         </div>
                                     )}
@@ -238,7 +228,7 @@ export default function Home()  {
                                 download="ABDESSAMAD_AITBELLA_CV_03-2025.pdf"
                                 onMouseEnter={handleHover}
                                 onMouseLeave={handleLeave}
-                                className="px-6 py-3 border-2 border-slate-500 rounded-full text-white font-medium rounded-lg hover:from-slate-600 hover:to-slate-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2 mb-8"
+                                className="px-6 py-3 border-2 border-slate-500 rounded-full text-white font-medium rounded-lg hover:from-slate-600 hover:to-slate-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center gap-2"
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
                                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
@@ -251,7 +241,7 @@ export default function Home()  {
                 </div>
 
                 <div
-                    className={`home-right overflow-auto ${windowWidth > 1024 ? "w-[74%]" : "w-full"} flex justify-center items-center p-10`}
+                    className={`home-right overflow-auto ${windowWidth > 1024 ? "w-[74%]" : "w-full"} flex justify-center items-center ${windowWidth <= 1024 ? "p-0" : "p-10"}`}
                     onMouseEnter={handleHover}
                     onMouseLeave={handleLeave}
                 >
