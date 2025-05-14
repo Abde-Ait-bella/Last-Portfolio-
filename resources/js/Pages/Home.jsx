@@ -182,7 +182,7 @@ export default function Home()  {
                     </div>
                     
                     <div className='contact'>
-                        <div className="flex flex-col items-center gap-6 mt-2">
+                        <div className={`flex flex-col items-center gap-6 ${windowWidth < 900 ? "mt-5" : "mt-2"}`}>
                             <div className="flex gap-6">
                                 <a href="https://github.com/Abde-Ait-bella" target="_blank" rel="noopener noreferrer"
                                     onMouseEnter={handleHover}
