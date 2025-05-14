@@ -9,7 +9,7 @@
   <meta property="og:title" content="Portfolio Abdessamad Ait-bella" />
   <meta property="og:type" content="website" />
   <meta name="description" content="..." />
-  <meta property="og:image" content="./images/profile.png" />
+  <meta property="og:image" content="https://intranet.youcode.ma/storage/users/profile/thumbnail/1104-1727859750.JPG" />
   <meta name="keywrods"
         content="Ait-bella , full-stack, Laravel, Abdessmad, Reactjs">
     <title>Ait-bella Abdessamad</title>
