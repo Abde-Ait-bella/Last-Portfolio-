@@ -8,7 +8,7 @@
     "src": "public/Fonts/NationalPark-VariableFont_wght.woff"
   },
   "resources/css/app.css": {
-    "file": "assets/app-C27BSNBm.css",
+    "file": "assets/app-BtdntgMN.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -65,7 +65,7 @@
     "src": "resources/js/Pages/assets/images/techsIcons/tailwind.png"
   },
   "resources/js/app.jsx": {
-    "file": "assets/app-D6lMlgyc.js",
+    "file": "assets/app-BOzbDUz1.js",
     "name": "app",
     "src": "resources/js/app.jsx",
     "isEntry": true,
