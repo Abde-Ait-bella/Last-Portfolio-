@@ -131,7 +131,7 @@ export default function Home()  {
 
             <Toaster />
             <div style={container} className='homeContainer relative overflow-hidden min-h-screen'>
-                <div className={`home-left ${windowWidth > 1024 ? "w-[36%] px-7 py-6" : "w-full p-6"} grid gap-3`}>
+                <div className={`home-left ${windowWidth > 1024 ? "w-[36%] px-7 py-6" : "w-full py-6 px-3"} grid gap-3`}>
                     <motion.div
                         className="home-left-img h-[10rem] w-[10rem] border-2 border-slate-500 rounded-full overflow-hidden"
                         initial={{ opacity: 0, scale: 0 }}
