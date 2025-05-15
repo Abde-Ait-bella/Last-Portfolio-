@@ -70,7 +70,6 @@
         /* Citation du message */
         .message-quote {
             background-color: #F3F4F6;
-            font-family: cursive;
             border-left: 4px solid #62748e;
             padding: 15px;
             border-radius: 4px;
@@ -87,7 +86,7 @@
         .cta-button {
             display: inline-block;
             background-color: #9e9e9e4a;
-            color: #ffffff;
+            color: #292929;
             text-decoration: none;
             padding: 12px 25px;
             border-radius: 6px;
@@ -108,8 +107,6 @@
         }
 
         .social-link {
-            text-decoration: none;
-            color: #292929;
             padding: 0 5px;
         }
 
