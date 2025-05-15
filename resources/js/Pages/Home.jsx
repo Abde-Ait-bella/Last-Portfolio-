@@ -104,10 +104,10 @@ export default function Home()  {
         const email = "abdessamadaitbella1998@gmail.com"; // Replace with your actual email
         navigator.clipboard.writeText(email)
             .then(() => {
-                toast.success("Email copied to clipboard!");
+                toast.success("Email copié dans le presse-papiers !");
             })
             .catch(() => {
-                toast.error("Failed to copy email");
+                toast.error("Impossible de copier l'email");
             });
     };
 
